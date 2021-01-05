@@ -51,9 +51,9 @@ let allWagesFor = function(ob){
   const wage = ob.timeInEvents.map((e)=>{return wagesEarnedOnDate(ob,e.date)})
   return wage.reduce((acc , cv)=> acc +cv)
 }
-// let findEmployeeByFirstName=function(srArr,firName) {
-//   return srArr.find((record)=>{record.firstName===firName})
-// }
-function findEmployeeByFirstName(srcArray, first_Name){
-    return srcArray.find((record) => record.firstName === first_Name)
+let findEmployeeByFirstName=function(srArr,firt_Name) {
+  return srArr.find((record)=>{record.firstName===firt_Name})
 }
+// function findEmployeeByFirstName(srcArray, first_Name){
+//     return srcArray.find((record) => record.firstName === first_Name)
+// }
