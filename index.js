@@ -51,3 +51,6 @@ let allWagesFor = function(ob){
   const wage = ob.timeInEvents.map((e)=>{return wagesEarnedOnDate(ob,e.date)})
   return wage.reduce((acc , cv)=> acc +cv)
 }
+let findEmployeeByFirstName(srArr,firName) {
+   srArr.find((record)=>{record.first_name===firName})
+}
