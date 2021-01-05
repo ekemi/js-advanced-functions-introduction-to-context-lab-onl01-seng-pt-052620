@@ -57,4 +57,3 @@ let allWagesFor = function(ob){
 function findEmployeeByFirstName(srcArray, first_Name){
     return srcArray.find((record) => record.firstName === first_Name)
 }
-
