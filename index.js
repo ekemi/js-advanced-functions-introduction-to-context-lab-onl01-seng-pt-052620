@@ -52,5 +52,5 @@ let allWagesFor = function(ob){
   return wage.reduce((acc , cv)=> acc +cv)
 }
 let findEmployeeByFirstName=function(srArr,firName) {
-  return srArr.find((record)=>{record.first_name===firName})
+  return srArr.find((record)=>{record.firstName===firName})
 }
