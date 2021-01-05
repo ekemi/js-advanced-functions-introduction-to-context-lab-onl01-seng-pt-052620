@@ -54,6 +54,9 @@ let allWagesFor = function(ob){
 let findEmployeeByFirstName=function(srArr,firt_Name) {
   return srArr.find((record)=>record.firstName===firt_Name)
 }
-// function findEmployeeByFirstName(srcArray, first_Name){
-//     return srcArray.find((record) => record.firstName === first_Name)
-// }
+
+let calculatePayroll = function (arr) {
+  const wage = arr.map((record)=>allWagesFor(record))
+
+  return wage.reduce((acc,av) =>acc +av)
+}
